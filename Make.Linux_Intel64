@@ -174,7 +174,7 @@ CC       = mpicc
 CCNOOPT  = $(HPL_DEFS)
 OMP_DEFS = -openmp
 CCFLAGS  = $(HPL_DEFS) -flto -fuse-ld=/home/wmoses/llvms/llvm18/buildD/bin/ld.lld -O3 -lopenblas
-CCFLAGS  = $(HPL_DEFS) -flto -fuse-ld=/home/wmoses/llvms/llvm18/buildD/bin/ld.lld -O3 
+CCFLAGS  = $(HPL_DEFS) -flto -fuse-ld=/home/wmoses/llvms/llvm18/buildD/bin/ld.lld -O3 -L/home/wmoses/git/mlir-llvm/cuv/hpl-2.3 -lReactantExtra 
 #
 # On some platforms,  it is necessary  to use the Fortran linker to find
 # the Fortran internals used in the BLAS library.
